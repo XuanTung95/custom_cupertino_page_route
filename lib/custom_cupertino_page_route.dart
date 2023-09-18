@@ -22,7 +22,11 @@ class CustomCupertinoPageRoute<T> extends CupertinoPageRoute<T> {
   @override
   bool get hasScopedWillPopCallback {
     if (isPopGestureEnabled == null) {
-      return !(Platform.isIOS || Platform.isMacOS);
+      if (Platform.isIOS || Platform.isMacOS) {
+        return super.hasScopedWillPopCallback;
+      } else {
+        return true;
+      }
     } else if (isPopGestureEnabled == true) {
       return super.hasScopedWillPopCallback;
     } else {
