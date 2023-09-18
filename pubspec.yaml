@@ -1,7 +1,7 @@
 name: custom_cupertino_page_route
-description: A new Flutter package project.
+description: A CupertinoPageRoute which can disable swipe back gesture.
 version: 0.0.1
-homepage:
+homepage: https://github.com/XuanTung95/custom_cupertino_page_route
 
 environment:
   sdk: '>=2.17.0 <4.0.0'
